@@ -29,7 +29,9 @@
  */
 ?>
 <?php
- $layout = $node->field_masonry_layout[und][0]['value']; 
+	if (isset($node->field_masonry_layout['und'][0]['value'])){
+ 	   $layout = $node->field_masonry_layout['und'][0]['value'];
+   }
 ?>
 <div class="grid-item <?php print $masonry_style; ?>">
 	<article class="teaser clearfix">
