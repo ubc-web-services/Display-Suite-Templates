@@ -1,0 +1,185 @@
+<?php
+function ubc_ds_layouts_ds_layout_info() {
+  $path = drupal_get_path('module', 'ubc_ds_layouts');
+  $layouts = array();
+
+  $layouts['ds_accordion'] = array(
+    'label' => t('Accordion'),
+    'path' => $path . '/layouts/accordion',
+    'regions' => array(
+      'accordion_trigger' => t('Accordion Trigger'),
+      'accordion_content' => t('Accordion Content'),
+    ),
+    'form' => TRUE,
+    // 'css' => TRUE,
+    //'image' => TRUE,
+  );
+
+  $layouts['ds_bootstrap_eight_and_four_column'] = array(
+    'label' => t('Bootstrap eight and four column'),
+    'path' => $path . '/layouts/bootstrap-eight-and-four-column',
+    'regions' => array(
+      'left' => t('Left'),
+      'right' => t('Right'),
+    ),
+    'form' => TRUE,
+    // 'css' => TRUE,
+    //'image' => TRUE,
+  );
+  $layouts['ds_bootstrap_nine_and_three_column'] = array(
+    'label' => t('Bootstrap nine and three column'),
+    'path' => $path . '/layouts/bootstrap_nine_and_three_column',
+    'regions' => array(
+      'left' => t('Left'),
+      'right' => t('Right'),
+    ),
+    'form' => TRUE,
+    // 'css' => TRUE,
+    //'image' => TRUE,
+  );
+  
+  $layouts['ds_featured_content'] = array(
+    'label' => t('Featured Content'),
+    'path' => $path . '/layouts/featured_content',
+    'regions' => array(
+      'image' => t('Image'),
+      'caption' => t('Caption'),
+    ),
+    'form' => TRUE,
+    // 'css' => TRUE,
+    //'image' => TRUE,
+  );
+
+  $layouts['ds_featured_teaser_conditional'] = array(
+    'label' => t('Featured Teaser with a conditional region'),
+    'path' => $path . '/layouts/featured_teaser_conditional',
+    'regions' => array(
+      'image_area' => t('Image Area'),
+      'content_area' => t('Content Area'),
+	    'if_area' => t('If Area'),
+	    'else_area' => t('Else Area'),
+    ),
+    'form' => TRUE,
+    // 'css' => TRUE,
+    //'image' => TRUE,
+  );
+    
+  $layouts['ds_landingfeature'] = array(
+    'label' => t('Landing Page Feature'),
+    'path' => $path . '/layouts/landingfeature',
+    'regions' => array(
+      'landingfeature_title' => t('Landing Page Feature Title'),
+      'landingfeature_image' => t('Landing Page Feature Image'),
+      'landingfeature_content' => t('Landing Page Feature CTA Area'),
+    ),
+    'form' => TRUE,
+    // 'css' => TRUE,
+    //'image' => TRUE,
+  );
+
+  $layouts['ds_masonry'] = array(
+    'label' => t('Masonry'),
+    'path' => $path . '/layouts/masonry',
+    'regions' => array(
+      'masonry_style' => t('Masonry Trigger'),
+      'masonry_image' => t('Masonry Image Square'),
+      'masonry_image_landscape' => t('Masonry Image Landscape'),
+      'masonry_image_stacked' => t('Masonry Image Stacked'),
+      'masonry_content' => t('Masonry Content'),
+    ),
+    'form' => TRUE,
+    // 'css' => TRUE,
+    //'image' => TRUE,
+  );
+
+  $layouts['ds_media_object'] = array(
+    'label' => t('Media Object'),
+    'path' => $path . '/layouts/media_object',
+    'regions' => array(
+      'image_area' => t('Image Area'),
+      'content_area' => t('Content Area'),
+    ),
+    'form' => TRUE,
+    // 'css' => TRUE,
+    //'image' => TRUE,
+  );
+
+  $layouts['ds_media_object_conditional'] = array(
+    'label' => t('Media Object with a conditional region'),
+    'path' => $path . '/layouts/media_object_conditional',
+    'regions' => array(
+      'image_area' => t('Image Area'),
+      'content_area' => t('Content Area'),
+	    'if_area' => t('If Area'),
+	    'else_area' => t('Else Area'),
+    ),
+    'form' => TRUE,
+    // 'css' => TRUE,
+    //'image' => TRUE,
+  );
+
+  $layouts['ds_miniteaser'] = array(
+    'label' => t('Mini Teaser'),
+    'path' => $path . '/layouts/miniteaser',
+    'regions' => array(
+      'miniteaser_content' => t('Mini Teaser Content'),
+    ),
+    'form' => TRUE,
+    // 'css' => TRUE,
+    //'image' => TRUE,
+  );
+  
+  $layouts['ds_slideshow_slide'] = array(
+    'label' => t('Slideshow slide'),
+    'path' => $path . '/layouts/slideshow_slide',
+    'regions' => array(
+      'image' => t('Image'),
+      'caption' => t('Caption'),
+    ),
+    'form' => TRUE,
+    // 'css' => TRUE,
+    //'image' => TRUE,
+  );
+  
+  $layouts['ds_supporting'] = array(
+    'label' => t('Supporting Content'),
+    'path' => $path . '/layouts/supporting',
+    'regions' => array(
+      'supporting_style' => t('Supporting Style'),
+      'supporting_content' => t('Supporting Content'),
+    ),
+    'form' => TRUE,
+    // 'css' => TRUE,
+    //'image' => TRUE,
+  );
+
+  $layouts['ds_untable_fourcol'] = array(
+    'label' => t('Untable: Four Columns'),
+    'path' => $path . '/layouts/untable_fourcol',
+    'regions' => array(
+			'colfirst' => t('First Column'),
+			'colsecond' => t('Second Column'),
+			'colthird' => t('Third Column'),
+			'colfourth' => t('Fourth Column'),
+    ),
+    'form' => TRUE,
+    // 'css' => TRUE,
+    //'image' => TRUE,
+  );
+  $layouts['ds_untables'] = array(
+    'label' => t('Untables'),
+    'path' => $path . '/layouts/untables',
+    'regions' => array(
+      'first' => t('First'),
+      'second' => t('Second'),
+      'third' => t('Third'),
+      'fourth' => t('Fourth'),
+    ),
+    'form' => TRUE,
+    // 'css' => TRUE,
+    //'image' => TRUE,
+  );
+
+
+  return $layouts;
+}

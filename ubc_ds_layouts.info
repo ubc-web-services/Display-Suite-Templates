@@ -1,0 +1,7 @@
+name = UBC Display Suite Layouts
+description = A set of commonly used display suite layouts
+package = "UBC IT Web Services"
+core = 7.x
+dependencies[] = ds
+version = "7.x-1.0-beta"
+project = "ubc_ds_layouts"
